@@ -16,7 +16,6 @@ CREATE TABLE animal(
     PRIMARY KEY (id_animal)
 );
 
-
 3.Добавить в эту таблицу несколько животных
 INSERT INTO animal (name_animal,pyte_animal,age_animal,sex_animal,weight_animal) VALUES ('барбос','собака','7','мужской','8');
 INSERT INTO animal (name_animal,pyte_animal,age_animal,sex_animal,weight_animal) VALUES ('барсик','кот','3','мужской','4');
