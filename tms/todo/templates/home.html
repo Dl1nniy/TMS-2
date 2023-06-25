@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo list</title>
+    <style type="text/css">
+        TABLE {
+        border-collapse: collapse;
+        }
+        TD, TH {
+        padding: 3px;
+        border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>TODO</h1>
+    <div>
+        <table>
+            <span>
+                <tr>
+                    <th>uid</th>
+                    <th>id</th>
+                    <th>title</th>
+                    <th>status</th>
+                </tr>
+                {%  for todo in todos %}
+                <tr>
+                    <th>{{ todo.uid }}</th>
+                    <th>{{ todo.id }}</th>
+                    <th align="left">{{ todo.title }}</th>
+                    <th>{{ todo.status }}</th>
+                </tr>
+                {% endfor %}
+            </span>
+        </table>
+    </div>
+</body>
+</html>
