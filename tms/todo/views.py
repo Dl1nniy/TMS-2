@@ -3,7 +3,6 @@ from django.shortcuts import render
 
 import requests
 
-import json
 
 
 response = requests.get('https://jsonplaceholder.typicode.com/todos').json()
