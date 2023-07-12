@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form method="post" action="{% url 'todos' %}">
+  {% csrf_token %}
+  <h1>Добавить задачу</h1>
+  <label for="title">Название задачи:</label>
+  <input type="text" uid="title" id="title" title="title" status="title" ><br><br>
+  <input type="submit" value="Добавить">
+</form>
+<a href="{% url 'create' %}">ссылка на список задач</a>
+{% endblock %}
